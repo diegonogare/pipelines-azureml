@@ -1,5 +1,5 @@
 variables:
-  ml-ws-connection: 'azmldemows' # Workspace Service Connection name
+  ml-ws-connection: 'aml-demo-connection' # Workspace Service Connection name
   ml-ws: 'aml-demo' # AML Workspace name
   ml-rg: 'aml-demo' # AML resource Group name
   ml-ct: 'cpu-cluster-1' # AML Compute cluster name
