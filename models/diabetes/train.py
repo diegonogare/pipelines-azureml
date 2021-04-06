@@ -24,7 +24,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 data = {"train": {"X": X_train, "y": y_train},
         "test": {"X": X_test, "y": y_test}}
 
-print(X_test)
+#print(X_test)
 
 # list of numbers from 0.0 to 1.0 with a 0.05 interval
 alphas = mylib.get_alphas()
