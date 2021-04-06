@@ -22,6 +22,8 @@ def init():
 input_sample = np.array([[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]])
 output_sample = np.array([3726.995])
 
+result = 0
+
 @input_schema('data', NumpyParameterType(input_sample))
 @output_schema(NumpyParameterType(output_sample))
 def run(data):
@@ -32,3 +34,5 @@ def run(data):
     except Exception as e:
         error = str(e)
         return error
+
+print(result)
