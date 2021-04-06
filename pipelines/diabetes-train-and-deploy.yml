@@ -32,14 +32,14 @@ steps:
     scriptType: 'bash'
     inlineScript: 'az ml folder attach -w $(ml-ws) -g $(ml-rg)'
 
-#- task: AzureCLI@2
-#  displayName: 'Delete AKS cluster'
-#  inputs:
-#    azureSubscription: $(ml-ws-connection)
-#    workingDirectory: $(ml-path)
-#    scriptLocation: inlineScript
-#    scriptType: 'bash'
-#    inlineScript: 'az ml computetarget delete --name $(ml-aks-name)'
+- task: AzureCLI@2
+  displayName: 'Delete AKS cluster'
+  inputs:
+    azureSubscription: $(ml-ws-connection)
+    workingDirectory: $(ml-path)
+    scriptLocation: inlineScript
+    scriptType: 'bash'
+    inlineScript: 'az ml computetarget delete --name $(ml-aks-name)'
 
 
 - task: AzureCLI@2
